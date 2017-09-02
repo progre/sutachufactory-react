@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "jsx": "react-native",
+        "module": "commonjs",
+        "noUnusedLocals": true,
+        "outDir": "./",
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ],
+        "target": "es2015"
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "./src/"
+    ]
+}

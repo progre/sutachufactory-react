@@ -1,0 +1,52 @@
+html {
+  width: 100%;
+  height: 100%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; 縦も中央ぞろえ */
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  background: white;
+  user-select: none;
+}
+
+.common-button {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: 4px solid gray;
+  border-radius: 10px;
+  transition: .4s;
+  /* TODO: 文字サイズ依存で表示が崩れる */
+  line-height: 120px;
+  font-size: 60px;
+  text-decoration-line: none;
+  color: black;
+}
+
+.common-border {
+  margin: 10px;
+  border: 4px solid gray;
+  border-radius: 10px;
+}
+
+.figure-enter {
+  position: absolute;
+  left: 415px;
+}
+
+.figure-enter.figure-enter-active {
+  position: absolute;
+  left: 0;
+  transition: left 250ms linear;
+}

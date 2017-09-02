@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "@progre/tslint-config"
+  ],
+  "rules": {
+    "completed-docs": [
+      false
+    ],
+    "linebreak-style": [
+      false
+    ],
+    "no-backbone-get-set-outside-model": false,
+    "no-multiline-string": false,
+    "no-string-based-set-timeout": false,
+    "no-unsafe-any": false,
+    "react-a11y-event-has-role": false,
+    "react-a11y-img-has-alt": false,
+    "strict-boolean-expressions": false,
+    "ter-indent": false
+  }
+}

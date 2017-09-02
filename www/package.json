@@ -1,0 +1,31 @@
+{
+  "name": "surachufactory",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && next build",
+    "dev": "concurrently \"tsc --inlineSourceMap --watch\" \"next -p 3001\"",
+    "start": "next start"
+  },
+  "dependencies": {
+    "js-cookie": "^2.1.4",
+    "next": "^3.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-transition-group": "^2.2.0",
+    "rxjs": "^5.4.3",
+    "uid-safe": "^2.1.5"
+  },
+  "devDependencies": {
+    "@progre/tslint-config": "^5.0.0-beta.0",
+    "@types/js-cookie": "^2.1.0",
+    "@types/node": "^8.0.26",
+    "@types/react": "^15.0.1",
+    "@types/react-transition-group": "^2.0.4",
+    "@types/uid-safe": "^2.1.1",
+    "concurrently": "^3.1.0",
+    "source-map-support": "^0.4.16",
+    "tslint": "^5.7.0",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.1.5"
+  }
+}
