@@ -100,6 +100,7 @@ export default class Application {
     }))
       .filter(x => x.productionVolume > 0)
       .concat()
-      .sort(x => -x.productionVolume);
+      .sort(x => -x.productionVolume)
+      .slice(0, 10);
   }
 }
