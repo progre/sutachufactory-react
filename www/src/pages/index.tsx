@@ -1,13 +1,14 @@
 try { require('source-map-support').install(); } catch (e) {/* NOP */ }
 import * as React from 'react';
 import IndexApplication from '../applications/IndexApplication';
+import { Ranking } from '../commons/domains/apis';
 import Root from '../components/index/Root';
 
 const initialState = {
   totalSales: 0,
   totalProduction: 0,
-  totalRanking: [] as ReadonlyArray<{ name: string; sales: number; }>,
-  hourlyRanking: [] as ReadonlyArray<{ name: string; sales: number; }>,
+  totalRanking: [] as Ranking,
+  hourlyRanking: [] as Ranking,
   name: '',
 };
 

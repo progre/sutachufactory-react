@@ -30,8 +30,8 @@ export default class Work extends React.Component<{}, typeof initialState> {
       this.setState({
         ...this.state,
         ...faces,
-        productionVolume: this.app.productionVolume,
-        salary: this.app.salary,
+        productionVolume: this.app.result.productionVolume,
+        salary: this.app.result.salary,
         in: true,
       });
       setTimeout(
@@ -49,8 +49,8 @@ export default class Work extends React.Component<{}, typeof initialState> {
       this.setState({
         ...this.state,
         ...faces,
-        productionVolume: this.app.productionVolume,
-        salary: this.app.salary,
+        productionVolume: this.app.result.productionVolume,
+        salary: this.app.result.salary,
       });
     });
     document.addEventListener('keydown', this.onKeyDown);

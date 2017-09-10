@@ -16,6 +16,7 @@ body {
   width: 1280px;
   height: 720px;
   background: white;
+  -moz-user-select: none;
   user-select: none;
 }
 

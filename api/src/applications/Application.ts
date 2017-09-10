@@ -3,6 +3,7 @@ import { sync as uid } from 'uid-safe';
 import { calcGrossMargin, calcSalary } from '../commons/domains/accountant';
 import { GlobalStatus, InitialState, Operation } from '../commons/domains/apis';
 import { toProduct } from '../commons/domains/fareadjustmenter';
+import { OutsourcedFigure } from '../commons/domains/schemas';
 import { createNew100Figures } from '../domains/figurefactory';
 import Repository from '../infrastructures/Repository';
 
@@ -71,7 +72,7 @@ export default class Application {
     const products = operations
       .map(x => ({
         actions: x.actions,
-        figure: figures.find(y => y.figureId === x.figureId),
+        figure: <OutsourcedFigure>figures.find(y => y.figureId === x.figureId),
       }))
       .filter(x => x.figure)
       .map(x => toProduct(x.figure, x.actions, now));

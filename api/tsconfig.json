@@ -9,6 +9,7 @@
                 "name": "tslint-language-service"
             }
         ],
+        "strictNullChecks": true,
         "target": "es2015"
     },
     "exclude": [

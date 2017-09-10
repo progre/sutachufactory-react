@@ -65,6 +65,9 @@ export default class Root extends React.Component<Props, typeof initialState> {
           onRankingClick={this.onRankingClick}
           onNameChange={props.onNameChange}
         />
+        <div style={{ position: 'absolute', bottom: 25, right: 25 }}>
+          © <a href="https://twitter.com/progremaster/">ぷろぐれ</a>
+        </div>
         {
           // オーバーレイ
         }

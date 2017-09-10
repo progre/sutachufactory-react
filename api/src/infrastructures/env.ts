@@ -1,1 +1,1 @@
-export const DB = process.env.db;
+export const DB = process.env.db || (() => { throw new Error(); })();
