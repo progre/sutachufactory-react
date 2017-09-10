@@ -2,10 +2,30 @@ export default function Manual(props: {
   style?: React.CSSProperties;
 }) {
   return (
-    <div>
-      <span style={{ position: 'absolute', left: 0, right: 0, width: 'auto' }}>
-        WORK IN PROGREちゅー
-      </span>
+    <div style={{ fontFamily: 'sans-serif', padding: '25px', ...props.style }}>
+      <h1 style={{ textAlign: 'center' }}>
+        作業説明
+      </h1>
+      <p>
+        製造中のすたちゅーが流れてきます。しっぽを取り付けてすたちゅーを出荷してください。<br />
+        出荷するごとに報酬がもらえます。<br />
+        かわいいすたちゅーをたくさん作りましょう！
+      </p>
+      <h2>遊び方</h2>
+      <ol>
+        <li><b>X キー</b>を使ってすたちゅーを<b>うつ伏せ</b>にします</li>
+        <li><b>Z キー</b>を使ってしっぽを取り付けます</li>
+        <li><b>X キー</b>を使ってすたちゅーを<b>あお向け</b>にします</li>
+        <li><b>Enter キー</b>で次のすたちゅーに移ります</li>
+        <li>疲れたら<b>退勤ボタン</b>を押すと休憩できます</li>
+      </ol>
+      <h2>ヒント</h2>
+      <ul>
+        <li>うつ伏せのまま出荷したり、しっぽを付けずに出荷すると罰金になります。気をつけましょう。</li>
+        <li>まれにしっぽがついたすたちゅーが流れてきます。かわいいのでそのまま出荷しましょう。</li>
+        <li>まれにうどんが流れてきます。冷めないうちにそのまま出荷しましょう。</li>
+        <li>プレイ内容は5分ごとにサーバーに保存されますが、ゲームをやめる際は必ず退勤ボタンを押してください。</li>
+      </ul>
     </div>
   );
 }

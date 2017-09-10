@@ -79,7 +79,7 @@ export default class Root extends React.Component<Props, typeof initialState> {
           top: 25,
           bottom: 25,
         }}>
-          <Manual />
+          <Manual style={{ width: '100%' }} />
         </PopupWindow>
         <PopupWindow onClick={this.onRankingClick} style={{
           display: this.state.isShowingRanking ? 'inherit' : 'none',
