@@ -16,5 +16,5 @@ export function setName(name: string) {
 }
 
 export function getName() {
-  return Cookies.get('name');
+  return Cookies.get('name') || '';
 }

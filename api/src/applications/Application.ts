@@ -55,7 +55,7 @@ export default class Application {
     const counts = await this.repo.getFigureStatus(userToken);
     return {
       figures,
-      productionVolume: calcGrossMargin(counts),
+      productionVolume: counts.validFigures + counts.validNatures + counts.validUdons,
       salary: calcSalary(counts),
     };
   }
