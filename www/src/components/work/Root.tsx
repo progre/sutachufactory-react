@@ -1,8 +1,8 @@
 // tslint:disable-next-line:import-name
-import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
 import { FaceOfFigure } from '../../commons/domains/types';
+import Header from '../Header';
 import InGameHelp from './InGameHelp';
 import ProductionLine from './ProductionLine';
 import Sample from './Sample';
@@ -19,10 +19,8 @@ export default function Root(props: {
 }) {
   return (
     <div>
-      <Head>
-        <link rel="stylesheet" href="/static/style.css" />
-      </Head>
-      <Link href="/">
+        <Header />
+        <Link href="/">
         <a
           className="common-button"
           style={{ position: 'absolute', width: 200 }}

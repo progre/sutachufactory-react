@@ -1,7 +1,6 @@
-// tslint:disable-next-line:import-name
-import Head from 'next/head';
 import * as React from 'react';
 import { Ranking as RankingType } from '../../commons/domains/apis';
+import Header from '../Header';
 import Manual from './Manual';
 import Menu from './Menu';
 import PopupWindow from './PopupWindow';
@@ -35,9 +34,7 @@ export default class Root extends React.Component<Props, typeof initialState> {
     const props = this.props;
     return (
       <div style={{ display: 'flex' }}>
-        <Head>
-          <link rel="stylesheet" href="/static/style.css" />
-        </Head>
+        <Header />
         <div
           style={{
             position: 'absolute',
