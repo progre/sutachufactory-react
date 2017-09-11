@@ -70,6 +70,6 @@ async function createRanking(
   }))
     .filter(x => x.productionVolume > 0)
     .concat()
-    .sort(x => -x.productionVolume)
+    .sort((a, b) => a.productionVolume - b.productionVolume)
     .slice(0, 10);
 }
