@@ -37,7 +37,7 @@ export default class RankingManager {
       = await updateRankings(this.mongoDBRepo);
     process.stdout.write(
       `done! totalRanking: ${this.totalRanking.length},`
-      + ` hourlyRanking: ${this.hourlyRanking.length}`,
+      + ` hourlyRanking: ${this.hourlyRanking.length}` + '\n',
     );
     this.lastUpdated = now;
     this.updating = false;
