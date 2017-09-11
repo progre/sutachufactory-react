@@ -10,11 +10,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@types/mongodb": "^2.2.11",
-    "@types/nedb": "^1.8.3",
-    "@types/node-schedule": "^1.2.0",
     "@types/uid-safe": "^2.1.1",
     "mongodb": "^2.2.31",
-    "node-schedule": "^1.2.4",
     "restify": "^5.2.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.2",

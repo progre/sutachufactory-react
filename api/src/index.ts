@@ -3,7 +3,7 @@ const packageJson = require('../package.json');
 import Application from './applications/Application';
 import { Accept, NewFigures } from './commons/domains/apis';
 
-const app = new Application();
+let app: Application;
 
 const server = restify.createServer({
   name: packageJson.name,
@@ -65,7 +65,11 @@ server.get('/globalStatus', async (_, res, __) => {
   }
 });
 
-server.listen(3000, () => {
-  // tslint:disable-next-line:no-console
-  console.log('%s listening at %s', server.name, server.url);
-});
+Application.create().then((x) => {
+  app = x;
+  server.listen(3000, () => {
+    // tslint:disable-next-line:no-console
+    console.log('%s listening at %s', server.name, server.url);
+  });
+})
+  .catch((e) => { console.error(e.stack || e); });

@@ -17,9 +17,9 @@ import { Db, MongoClient } from 'mongodb';
 import { OutsourcedFigure, Product, User } from '../commons/domains/schemas';
 import { DB } from './env';
 
-export default class Repository {
+export default class MongoDBRepo {
   static async create() {
-    return new Promise<Repository>((resolve, reject) => {
+    return new Promise<MongoDBRepo>((resolve, reject) => {
       MongoClient.connect(DB, async (err, db) => {
         if (err) {
           reject(err);
