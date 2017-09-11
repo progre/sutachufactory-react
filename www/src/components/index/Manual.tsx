@@ -2,7 +2,7 @@ export default function Manual(props: {
   style?: React.CSSProperties;
 }) {
   return (
-    <div style={{ fontFamily: 'sans-serif', padding: '25px', ...props.style }}>
+    <div style={{ padding: '25px', ...props.style }}>
       <h1 style={{ textAlign: 'center' }}>
         作業説明
       </h1>
@@ -25,6 +25,7 @@ export default function Manual(props: {
         <li>まれにしっぽがついたすたちゅーが流れてきます。かわいいのでそのまま出荷しましょう。</li>
         <li>まれにうどんが流れてきます。冷めないうちにそのまま出荷しましょう。</li>
         <li>プレイ内容は5分ごとにサーバーに保存されますが、ゲームをやめる際は必ず退勤ボタンを押してください。</li>
+        <li>ユーザー認証情報は Cookie に保存されています。シークレットウィンドウを使えばそのウィンドウ限りのユーザーでプレイできるので、大会等にご活用ください。</li>
       </ul>
     </div>
   );

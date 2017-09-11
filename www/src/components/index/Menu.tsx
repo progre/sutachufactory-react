@@ -12,12 +12,11 @@ export default function Menu(props: {
       position: 'absolute',
       width: '100%',
       padding: 0,
-      top: 350,
+      top: 325,
       display: 'flex',
       justifyContent: 'center',
       flexDirection: 'column',
       alignItems: 'center',
-      fontFamily: 'sans-serif',
     }}>
       <style jsx>{`
         div {

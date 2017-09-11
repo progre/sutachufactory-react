@@ -41,7 +41,7 @@ export default class Root extends React.Component<Props, typeof initialState> {
         <div
           style={{
             position: 'absolute',
-            top: 25,
+            top: 0,
             width: '100%',
           }}
         >
@@ -49,7 +49,6 @@ export default class Root extends React.Component<Props, typeof initialState> {
             style={{
               textAlign: 'center',
               fontSize: 80,
-              fontFamily: 'sans-serif',
             }}
           >
             すたちゅー工場
@@ -113,11 +112,23 @@ function GlobalStatus(props: {
   totalProduction: number;
 }) {
   return (
-    <div style={{ marginLeft: 500 }}>
-      <span style={{ display: 'inline-block', width: 100 }}>総生産数:</span>
-      {props.totalProduction} <small style={{ fontSize: 'x-small' }}>すたちゅー</small><br />
-      <span style={{ display: 'inline-block', width: 100 }}>総売上:</span>
-      {props.totalSales} <small style={{ fontSize: 'x-small' }}>すたちゅーコイン</small>
+    <div style={{ marginLeft: 200, fontSize: 'x-large' }}>
+      <State label="総生産数" count={props.totalProduction} unit="すたちゅー" /><br />
+      <State label="総利益" count={props.totalSales} unit="すたちゅーコイン" />
     </div>
+  );
+}
+
+function State(props: {
+  label: string;
+  count: number;
+  unit: string;
+}) {
+  return (
+    <span style={{ textAlign: 'right' }}>
+      <span style={{ display: 'inline-block', width: 300 }}>{props.label}</span>
+      <span style={{ display: 'inline-block', width: 300 }}>{props.count}</span>
+      <small style={{ marginLeft: 10, fontSize: 'x-small' }}>{props.unit}</small>
+    </span>
   );
 }

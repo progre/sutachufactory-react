@@ -1,5 +1,5 @@
 {
-  "name": "surachufactory",
+  "name": "sutachufactory",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc && next build",
