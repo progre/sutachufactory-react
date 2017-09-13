@@ -47,7 +47,7 @@ function OneRanking(props: {
                 {x.name}
               </div>
               <div style={{
-                width: 250,
+                width: 150,
                 textAlign: 'right',
                 marginRight: '2em',
               }}>

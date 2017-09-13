@@ -19,8 +19,8 @@ export default function Root(props: {
 }) {
   return (
     <div>
-        <Header />
-        <Link href="/">
+      <Header />
+      <Link href="/">
         <a
           className="common-button"
           style={{ position: 'absolute', width: 200 }}
@@ -54,7 +54,9 @@ export default function Root(props: {
       }}>
         {props.productionVolume}
         <Unit>すたちゅー</Unit><br />
-        {props.salary}
+        <span style={{ color: props.salary < 0 ? 'red' : 'initial' }}>
+          {props.salary}
+        </span>
         <Unit>すたちゅーコイン</Unit>
       </div>
     </div>
