@@ -111,7 +111,7 @@ function GlobalStatus(props: {
   return (
     <div style={{ marginLeft: 200, fontSize: 'x-large' }}>
       <State label="総生産数" count={props.totalProduction} unit="すたちゅー" /><br />
-      <State label="総利益" count={props.totalSales} unit="すたちゅーコイン" />
+      <State label="総利益" count={props.totalSales} unit="すたコイン" />
     </div>
   );
 }

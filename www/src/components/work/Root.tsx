@@ -57,7 +57,7 @@ export default function Root(props: {
         <span style={{ color: props.salary < 0 ? 'red' : 'initial' }}>
           {props.salary}
         </span>
-        <Unit>すたちゅーコイン</Unit>
+        <Unit>すたコイン</Unit>
       </div>
     </div>
   );
